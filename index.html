@@ -1,68 +1,54 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documet</title>
+    <title>Mi curso de CSS</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
 </head>
+
 <body>
     <header>
-
-        <h1>Este es el titulo principal de mi pagina web</h1>
-
-        <span>HOME</span>
-        <span>NOTICIAS</span>
-        <span>CLIMA</span>
-
+        <div id="titulos">
+            <h1 class="title" id="principal">Mi prueba de CSS</h1>
+            <h3 class="title">Martin Levar</h3>
     </header>
 
     <main>
-        <img src="./imagen.jpg"/>
-        <section>
-            <h2>Este es el titulo de una seccion de noticias</h2>
-            <article>
-                <h3>Esta es la noticia</h3>
-                <div> 
-                    <p> Este sera el primer parrafo de mi noticia importante</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas nihil minus perferendis 
-                    temporibus ducimus dolorum fugiat earum voluptatum veniam, facere laudantium illum modi 
-                    maiores repudiandae, vel impedit ex illo exercitationem.</p>
-                </div>   
-            </article>
+        <article>
+            <div class="profile">
+                <h3 class="title">Full Stack Development</h3>
+                <br>
+                <p id="parrafo">Me llamo Martin Levar tengo 41 años y soy Full Stack en desarrollo de Webs y Apps</p>
+                <p id="parrafo">Ademas soy programador en Python y me gusta desarrollar en Backend </p>
+            </div>
+        </article>
+        <article>
+          <div id="cards-container"> 
+            <div class="cards">
+                <h4 class="title">HTML 5</h4>
+                <img src="./logohtml.png" class="logo">
+            </div>
 
-            <hr/>
+            <div class="cards">
+                <h4 class="title">CSS</h4>
+                <img src="./logocss.png" class="logo">
+            </div>
 
-            <article>
-                <h3> Esta es la noticia Numero 2</h3>
-                <p>Este es un listado de cosas importantes para esta noticia</p>
-                <ol>
-                    <li>Este es el item</li>
-                    <li>Este es el item</li>
-                    <li>Este es el item</li>
-                </ol>
-            </article>
-            <hr/>
-            <article>
+            <div class="cards">
+                <h4 class="tittle">JAVASCRIPT</h4>
+                <img src="./logojava.png"class="logo">
+          </div>
+         </div> 
+        </article>
 
-                <h3>Esta es la noticia numero 3</h3>
-                <p>Este listado de cosas importantes no esta ordenado</p>
-                <ul>
-                    <li>Este es un elmemento</li>
-                    <li>Este es otro elemento adicional</li>
-                    <li>Este es oootro elemento adicional</li>
-                </ul>
-            </article>
-        </section>
     </main>
     <footer>
-        <p>
-            Este es el footer de mi pagina ahora voy a poner unos enlaces
-
-        </p>
-
+        <div class="profile">
+            <h4 class="class_footer">Creado con amor desde Buenos Aires <img src="./icon.png" class="logocorazon"></h4>
+        </div>
     </footer>
-    
-    
 </body>
 
 </html>
